@@ -26,6 +26,14 @@ Vuetify0 has reached beta, freezing the public API: the existing composables and
 
 [Read More](/blog/announcing-vuetify0-beta/) { .text-end }
 
+## May 2026 Update
+
+🖊️ Jacek Czarniecki • 📅 June 8th, 2026
+
+May was a full-throttle feature sprint for Vuetify 4.1, the first minor since 4.0.0. The core team pushed hard to clear the backlog and land everything queued for the release: seven components promoted out of labs (VFileUpload, VDateInput, VColorInput, VIconBtn, VPicker, VStepperVertical, VPullToRefresh), four new ones (VHeatmap, VHighlight, VMonthPicker, VDateRangePicker), a full data-table accessibility pass, and a wave of fixes across 89 commits and 4 releases. Vuetify0 ran in parallel, landing its headless drag-and-drop family (useDragDrop, createSortable, createKanban) on the road to its June beta... { .text-medium-emphasis }
+
+[Read More](/blog/may-2026-update/) { .text-end }
+
 ## April 2026 Update
 
 🖊️ John Leider • 📅 May 4th, 2026
