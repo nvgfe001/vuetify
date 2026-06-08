@@ -62,6 +62,7 @@ May was the busiest framework month of the year so far, and nearly all of it poi
 * [Product Updates](#product-updates)
 * [May 2026 Changelog](#may-2026-changelog)
 * [What's Next](#whats-next)
+  * [Looking Further Ahead](#looking-ahead)
 
 ---
 
@@ -381,6 +382,18 @@ June stabilizes what May opened. **Vuetify 4.1** moves toward its stable release
 
 * [Vuetify 4.1](/getting-started/release-notes/?version=v4.1.0) is live — try the new components and labs promotions in your project today
 * The [Vuetify0 beta](/blog/announcing-vuetify0-beta/) froze its public API ahead of v1 — try it via [v0play](https://v0play.vuetifyjs.com)
+
+### Looking Further Ahead { #looking-ahead }
+
+Zooming out past June, the rest of the year sharpens around a single throughline: **finishing what we started**, so the ground is solid for what comes next.
+
+**A focused roadmap, and a clean finish for labs**: We've deliberately narrowed our roadmap commitments for the remainder of 2026 to concentrate the team on one outcome — **by November 1st, 2026, labs will be drained**. Every component still incubating will either graduate into core or be retired; nothing will be left sitting in an "unfinished" state. This is more than housekeeping. A clean, fully-resolved framework is the foundation for a stable, smooth migration as Vuetify0 moves in underneath, and we want that ground firm before the v0 migration picks up pace. You can [follow along on the roadmap](/introduction/roadmap/).
+
+**A community-driven issue board**: We're building a curated view into the issue board where the community can surface and vote on what matters most. Today, prioritization happens largely behind the scenes — this opens a direct line into what we tackle next, and gives us a far clearer read on where the framework's real pain points and most-wanted features actually are. We'll share more as it takes shape.
+
+**A modernized docs experience (later this year)**: We're planning a significant UX upgrade to Vuetify documentation pages, porting over many of the features introduced first to the [Vuetify0 documentation](https://0.vuetifyjs.com/). For a preview of where we're headed, you are more than welcome to spend some time in the [v0 docs](https://0.vuetifyjs.com/) — the navigation, search, and interactive examples and code samples there are an early taste of what's coming.
+
+**Community snips** [Vuetify Snips](https://snips.vuetifyjs.com/) has always been a hand-curated collection, but we know plenty of talented community members are sitting on gems worth sharing. Once [Vuetify Play](https://play.vuetifyjs.com) gets the stability overhaul it deserves, we'd like to open the door to community submissions — a curated set of community snips contributed by you. It's early days for this one, but it's something we're genuinely excited about.
 
 ::: error
 
