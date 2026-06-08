@@ -18,14 +18,6 @@ Latest news, updates, and stories about Vuetify.
 
 <br>
 
-## Announcing the Vuetify0 Beta
-
-🖊️ John Leider • 📅 June 2nd, 2026
-
-Vuetify0 has reached beta, freezing the public API: the existing composables and components keep their names and signatures through v1. Since the alpha, the totals went to 49 components and 68 composables, no composables remain in draft, and a headless drag-and-drop family (useDragDrop, createSortable, createKanban) was added along with createOtp, useDelay, and the Overflow component. The release also covers the testing and stability work — 5,700+ unit tests, 98.7% coverage — ahead of v1... { .text-medium-emphasis }
-
-[Read More](/blog/announcing-vuetify0-beta/) { .text-end }
-
 ## May 2026 Update
 
 🖊️ Jacek Czarniecki • 📅 June 8th, 2026
@@ -33,6 +25,14 @@ Vuetify0 has reached beta, freezing the public API: the existing composables and
 May was a full-throttle feature sprint for Vuetify 4.1, the first minor since 4.0.0. The core team pushed hard to clear the backlog and land everything queued for the release: seven components promoted out of labs (VFileUpload, VDateInput, VColorInput, VIconBtn, VPicker, VStepperVertical, VPullToRefresh), four new ones (VHeatmap, VHighlight, VMonthPicker, VDateRangePicker), a full data-table accessibility pass, and a wave of fixes across 89 commits and 4 releases. Vuetify0 ran in parallel, landing its headless drag-and-drop family (useDragDrop, createSortable, createKanban) on the road to its June beta... { .text-medium-emphasis }
 
 [Read More](/blog/may-2026-update/) { .text-end }
+
+## Announcing the Vuetify0 Beta
+
+🖊️ John Leider • 📅 June 2nd, 2026
+
+Vuetify0 has reached beta, freezing the public API: the existing composables and components keep their names and signatures through v1. Since the alpha, the totals went to 49 components and 68 composables, no composables remain in draft, and a headless drag-and-drop family (useDragDrop, createSortable, createKanban) was added along with createOtp, useDelay, and the Overflow component. The release also covers the testing and stability work — 5,700+ unit tests, 98.7% coverage — ahead of v1... { .text-medium-emphasis }
+
+[Read More](/blog/announcing-vuetify0-beta/) { .text-end }
 
 ## April 2026 Update
 
