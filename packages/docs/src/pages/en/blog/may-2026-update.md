@@ -31,7 +31,7 @@ meta:
 
 # May 2026 Update
 
-**May was a feature sprint.** With Vuetify 4 stable since February, the core team shifted into high gear to build out the first minor — and on May 21 that work opened [v4.1.0](/getting-started/release-notes/?version=v4.1.0). The whole month ran at full throttle, churning through a long backlog of features and important fixes earmarked for v4.1: **seven components promoted out of labs**, four brand-new ones, and a broad sweep of new props and bug fixes across the framework. Four releases shipped across the month, while Vuetify0 ran in parallel toward its own beta.
+**May was a feature-focused sprint.** With Vuetify 4 stable since February, we spent the month building out the first minor — and on May 21 that work opened [v4.1.0](/getting-started/release-notes/?version=v4.1.0). The whole month ran at full throttle, working through a long backlog of features and fixes we had lined up for v4.1: **seven components promoted out of labs**, four brand-new ones, and a broad sweep of new props and bug fixes across the framework. Four releases shipped over the month, while Vuetify0 ran in parallel toward its own beta.
 
 ![Hero image for May update](https://cdn.vuetifyjs.com/docs/images/blog/may-2026-update/may-hero.png "May hero image"){ height=112 }
 
@@ -43,7 +43,7 @@ meta:
 
 ## A minor to remember
 
-May was the busiest framework month of the year so far, and nearly all of it pointed at one target: shipping v4.1. **89 commits**, **34 features**, **19 fixes**, and **4 releases**, with [v4.1.0](/getting-started/release-notes/?version=v4.1.0) at the center. Rather than splitting focus across the ecosystem, the team poured its energy into clearing the framework backlog — graduating labs components that had earned their place, finishing half-built features, and knocking out the fixes that had to land before the minor. Meanwhile [Vuetify0](https://0.vuetifyjs.com/) closed out its alpha work with a headless drag-and-drop family and a testing push that set up the [beta announced June 2](/blog/announcing-vuetify0-beta/).
+May was our busiest framework month of the year so far, and nearly all of it pointed at one goal: shipping v4.1. **89 commits**, **34 features**, **19 fixes**, and **4 releases**, with [v4.1.0](/getting-started/release-notes/?version=v4.1.0) at the center. Rather than spreading ourselves across the ecosystem, we put the energy into clearing the framework backlog — graduating labs components that had earned their place, finishing half-built features, and dealing with the fixes that had to land before the minor. The effort shows up in the numbers: open issues dropped from 436 at the start of May to 386 by the 31st — and looking back, that's a 22% cut to the backlog over three months. Meanwhile [Vuetify0](https://0.vuetifyjs.com/) wrapped up its alpha work with a headless drag-and-drop family and a testing push that set up the [beta announced June 2](/blog/announcing-vuetify0-beta/).
 
 ---
 
@@ -101,7 +101,7 @@ View the complete list of changes in the [Full Changelog](#may-2026-changelog).
 
 After February's stable [Vuetify 4.0.0](/blog/february-2026-update/) and a string of patches, **May opened the first minor of the v4 line**. [v4.1.0](/getting-started/release-notes/?version=v4.1.0) is a feature release rather than a fix release — its theme is graduating components that proved themselves in labs and adding new ones for dates and data tables.
 
-The headline is volume. **Seven components moved out of labs** into core in a single release, and **four entirely new components** joined the framework. Alongside them came a wave of feature props across data tables, pickers, overlays, and the theme system — the kind of breadth that defines a minor rather than a patch.
+The headline is volume. **Seven components moved out of labs** into core in a single release, and **four entirely new components** joined the framework. Alongside them came a wave of feature props across data tables, pickers, overlays, and the theme system — the breadth you'd expect from a minor, not a patch.
 
 The work shipped in two drops in May — May 21 and May 28 — with the later one dedicated almost entirely to data table and table accessibility.
 
@@ -144,7 +144,7 @@ Seven components graduated from labs to core in v4.1. For most of them this is j
 
 ### New Features
 
-**[VDataTable](/components/data-tables/basics/)** — The data table received the most attention of any component this month. A handful of additions speak for themselves: search-match highlighting ([#22852](https://github.com/vuetifyjs/vuetify/pull/22852)), a mobile header slot ([#21429](https://github.com/vuetifyjs/vuetify/pull/21429)), and full ARIA support — `aria-sort` on sortable headers and labels for selection controls. A few others are worth calling out by what they unlock:
+**[VDataTable](/components/data-tables/basics/)** — The data table received the most attention of any component this month. Some additions are quick to summarize: search-match highlighting ([#22852](https://github.com/vuetifyjs/vuetify/pull/22852)), a mobile header slot ([#21429](https://github.com/vuetifyjs/vuetify/pull/21429)), and full ARIA support — `aria-sort` on sortable headers and labels for selection controls. Others deserve a closer look:
 
 * The new **`expanded`** slot ([#22871](https://github.com/vuetifyjs/vuetify/pull/22871)) renders custom detail content with a built-in transition, and the accompanying **`expand-strategy`** prop makes the table behave like an accordion — set it to `"single"` and opening one row collapses the others, no extra state-juggling required (`expand-transition` can swap or disable the animation).
 * **`v-model:opened`** ([#22772](https://github.com/vuetifyjs/vuetify/pull/22772)) two-way binds which groups are open and adds an `open-all` prop and a custom `group-key`, which lets you drive group state from code — expand everything by default, or save and restore a user's open groups across sessions.
@@ -157,7 +157,7 @@ Seven components graduated from labs to core in v4.1. For most of them this is j
 
 <!-- TODO: example for sparkline (gif) -->
 
-**[VOverlay](/components/overlays/) and [VCommandPalette](/components/command-palette/)** — A new viewport location strategy lets overlays enforce a specific on-screen placement ([#22698](https://github.com/vuetifyjs/vuetify/pull/22698)), and `location`/`origin` were made genuinely useful ([#22720](https://github.com/vuetifyjs/vuetify/pull/22720)).
+**[VOverlay](/components/overlays/) and [VCommandPalette](/components/command-palette/)** — A new viewport location strategy lets overlays enforce a specific on-screen placement ([#22698](https://github.com/vuetifyjs/vuetify/pull/22698)), and `location`/`origin` now behave the way you'd expect ([#22720](https://github.com/vuetifyjs/vuetify/pull/22720)).
 
 **[VTable](/components/tables/)** — Added a `caption` slot with pass-through of `aria-*` attributes and a `gridlines` prop ([#22873](https://github.com/vuetifyjs/vuetify/pull/22873)).
 
@@ -169,17 +169,15 @@ Seven components graduated from labs to core in v4.1. For most of them this is j
 
 **[VProgressLinear](/components/progress-linear/)** — A new `split` variant aligns the bar with Material Design 3, drawing a gap between the filled portion and the remaining track instead of one continuous line ([#22662](https://github.com/vuetifyjs/vuetify/pull/22662)). It reworked how the bar's chunks are calculated and rendered to match the MD3 progress indicator.
 
-**Arbitrary `rounded` values** — The list is already long, but we can't downplay the importance of this one ([#22721](https://github.com/vuetifyjs/vuetify/pull/22721)): `rounded` now accepts any value, finally letting you break out of the strict `sm`/`md`/`lg`/`xl` scale to dial in the exact corner radius your design calls for — the difference between a layout that looks close enough and one that looks genuinely polished.
+**Arbitrary `rounded` values** — The list is already long, but this one earns its spot ([#22721](https://github.com/vuetifyjs/vuetify/pull/22721)): `rounded` now accepts any value, finally letting you break out of the strict `sm`/`md`/`lg`/`xl` scale and dial in the exact corner radius your design calls for.
 
 <!-- TODO: example for rounded -->
 
 **[VSwitch](/components/switches/)** — Late in the month, the switch was aligned with the MD3 spec ([#22879](https://github.com/vuetifyjs/vuetify/pull/22879)) and gained a `size` prop ([#22882](https://github.com/vuetifyjs/vuetify/pull/22882)) and a `square` inset variant ([#22881](https://github.com/vuetifyjs/vuetify/pull/22881)).
 
-Rounding out the month, a handful of smaller additions: `VCalendar` gained 24-hour support ([#22853](https://github.com/vuetifyjs/vuetify/pull/22853)), the theme system picked up optional page transitions ([#22623](https://github.com/vuetifyjs/vuetify/pull/22623)), and a `hover-elevation` prop with matching CSS utilities ([#22621](https://github.com/vuetifyjs/vuetify/pull/22621)) and a `color` prop for `VTooltip` ([#19689](https://github.com/vuetifyjs/vuetify/pull/19689)) landed.
-
-<!-- TODO: example for page transitions (gif) -->
-
 <!-- TODO: example for switch -->
+
+Rounding out the month, a handful of smaller additions: `VCalendar` gained 24-hour support ([#22853](https://github.com/vuetifyjs/vuetify/pull/22853)), the theme system picked up optional page transitions ([#22623](https://github.com/vuetifyjs/vuetify/pull/22623)), and a `hover-elevation` prop with matching CSS utilities ([#22621](https://github.com/vuetifyjs/vuetify/pull/22621)) and a long awaited `color` prop for `VTooltip` ([#19689](https://github.com/vuetifyjs/vuetify/pull/19689)).
 
 ### Bug Fixes
 
@@ -231,7 +229,7 @@ May was Vuetify0's bridge from alpha to beta — **163 commits** across **three 
 
 ### Genesis Design System
 
-May also brought the first design system built on Paper: **[@paper/genesis](https://github.com/vuetifyjs/0/pull/240)** — a minimal set of docs primitives extracted from the v0 documentation site. It's an early, concrete proof of the Paper layer the wider ecosystem will build on.
+May also brought the first design system built on Paper: **[@paper/genesis](https://github.com/vuetifyjs/0/pull/240)** — a minimal set of docs primitives extracted from the v0 documentation site. It's an early, working example of the Paper layer the rest of the ecosystem will build on.
 
 <!-- TODO: screenshot? -->
 
@@ -385,15 +383,15 @@ June stabilizes what May opened. **Vuetify 4.1** moves toward its stable release
 
 ### Looking Further Ahead { #looking-ahead }
 
-Zooming out past June, the rest of the year sharpens around a single throughline: **finishing what we started**, so the ground is solid for what comes next.
+Looking past June, the theme for the rest of the year is a simple one: **finishing what we started**.
 
-**A focused roadmap, and a clean finish for labs**: We've deliberately narrowed our roadmap commitments for the remainder of 2026 to concentrate the team on one outcome — **by November 1st, 2026, labs will be drained**. Every component still incubating will either graduate into core or be retired; nothing will be left sitting in an "unfinished" state. This is more than housekeeping. A clean, fully-resolved framework is the foundation for a stable, smooth migration as Vuetify0 moves in underneath, and we want that ground firm before the v0 migration picks up pace. You can [follow along on the roadmap](/introduction/roadmap/).
+**A focused roadmap, and a clean finish for labs**: We've deliberately narrowed our roadmap commitments for the remainder of 2026 to concentrate the team on one outcome — **by November 1st, 2026, labs will be drained**. Every component still incubating will either graduate into core or be retired; nothing will be left sitting in an "unfinished" state. This isn't just housekeeping — a stable framework API is the foundation for a smooth migration as Vuetify0 moves in underneath.
 
 **A community-driven issue board**: We're building a curated view into the issue board where the community can surface and vote on what matters most. Today, prioritization happens largely behind the scenes — this opens a direct line into what we tackle next, and gives us a far clearer read on where the framework's real pain points and most-wanted features actually are. We'll share more as it takes shape.
 
-**A modernized docs experience (later this year)**: We're planning a significant UX upgrade to Vuetify documentation pages, porting over many of the features introduced first to the [Vuetify0 documentation](https://0.vuetifyjs.com/). For a preview of where we're headed, you are more than welcome to spend some time in the [v0 docs](https://0.vuetifyjs.com/) — the navigation, search, and interactive examples and code samples there are an early taste of what's coming.
+**A modernized docs experience (later this year)**: We're planning a significant UX upgrade to Vuetify documentation pages, porting over many of the features introduced first to the [Vuetify0 documentation](https://0.vuetifyjs.com/). For a preview of where we're headed, you are more than welcome to spend some time in the [v0 docs](https://0.vuetifyjs.com/) — the navigation, search, and interactive code samples there are an early taste of what's coming.
 
-**Community snips** [Vuetify Snips](https://snips.vuetifyjs.com/) has always been a hand-curated collection, but we know plenty of talented community members are sitting on gems worth sharing. Once [Vuetify Play](https://play.vuetifyjs.com) gets the stability overhaul it deserves, we'd like to open the door to community submissions — a curated set of community snips contributed by you. It's early days for this one, but it's something we're genuinely excited about.
+**Community snips**: [Vuetify Snips](https://snips.vuetifyjs.com/) has always been a hand-curated collection, but we know plenty of talented community members are sitting on gems worth sharing. Once [Vuetify Play](https://play.vuetifyjs.com) gets the stability overhaul it deserves, we'd like to open the door to community submissions — a curated set of community snips contributed by you. It's early days for this one, but it's something we're excited about.
 
 ::: error
 
