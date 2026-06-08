@@ -267,6 +267,12 @@ By the end of the alpha cycle, v0 had **5,700+ unit tests** across 142 spec file
 
 A new [enterprise sponsorship landing page](https://github.com/vuetifyjs/vuetify/pull/22813) was added for teams that want to support the framework at the organization level. The docs also picked up an upgrade-guide pass — a [CSS reset fallback for non-Sass setups](https://github.com/vuetifyjs/vuetify/pull/22821), a more conservative typography mapping, and codemod annotations — to smooth the v3 → v4 migration.
 
+### Nuxt Module
+
+Following March's [complete overhaul](/blog/march-2026-update/#nuxt-module-beta), [Andrei Elkin](https://github.com/AndreyYolkin) carried the [Nuxt Module](https://github.com/vuetifyjs/nuxt-module) further along its road to a stable v1, shipping [v1.0.0-beta.3](https://github.com/vuetifyjs/nuxt-module/releases/tag/v1.0.0-beta.3) (May 3) and [v1.0.0-beta.4](https://github.com/vuetifyjs/nuxt-module/releases/tag/v1.0.0-beta.4) (May 7).
+
+The notable thread was package resolution. `beta.3` dropped the `local-pkg` runtime dependency in favor of a tiny in-house helper built on native `import.meta.resolve`, with the goal of resolving Vuetify and its optional packages — `sass-embedded`, the icon-font sets — relative to the Nuxt project root rather than the current working directory. It proved too aggressive for the release and was reverted in `beta.4` to keep the beta stable, but it set the direction: the same root-relative, dependency-free resolution later landed properly as [a fix that no longer relies on cwd](https://github.com/vuetifyjs/nuxt-module/pull/366).
+
 ---
 
 ## May 2026 Changelog
